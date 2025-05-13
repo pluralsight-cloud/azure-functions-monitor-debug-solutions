@@ -82,6 +82,10 @@ resource functionApp 'Microsoft.Web/sites@2022-03-01' = {
           name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
           value: reference(resourceId('Microsoft.Insights/components', applicationInsightsName), '2020-02-02').InstrumentationKey
         }
+        {
+          name: 'WEBSITE_RUN_FROM_PACKAGE'
+          value: packageUri
+        }
       ]
       cors: {
         allowedOrigins: [
@@ -89,14 +93,5 @@ resource functionApp 'Microsoft.Web/sites@2022-03-01' = {
         ]
       }
     }
-  }
-}
-
-// (Optional) Zip Deploy to the Function App
-resource zipDeploy 'Microsoft.Web/sites/extensions@2022-03-01' = if (packageUri != '') {
-  name: 'MSDeploy'
-  parent: functionApp
-  properties: {
-    packageUri: packageUri
   }
 }
