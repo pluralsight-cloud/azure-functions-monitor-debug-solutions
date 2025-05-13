@@ -53,8 +53,8 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 3, complete the following steps now.
-	7. Head into the Function App and click on the **http function**.
-	8. Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
+	- Head into the Function App and click on the **http function**.
+	- Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
 
 
 	`{
@@ -83,8 +83,8 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 4, complete the following steps now.
-	7. Head into the Function App and click on the **http function**.
-	8. Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
+	- Head into the Function App and click on the **http function**.
+	- Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
 
 
 	`{
@@ -97,8 +97,9 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 	}
 	` 
  
-9. Follow along with the demo.
-10. Copy this JSON block to test the 400 errors alert.
+7. Follow along with the demo.
+
+8. Copy this JSON block to test the 400 errors alert.
 
 `{
     "orderId":   "A123",
@@ -108,7 +109,7 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 }
 `
 
-11. Copy this JSON block to test the order price alert.
+9. Copy this JSON block to test the order price alert.
 
 `{
     "orderId":   "A123",
