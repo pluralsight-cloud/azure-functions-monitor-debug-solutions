@@ -28,6 +28,7 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 6. Follow along with the demo.
 
 7. Copy this JSON block to test the function.
+   
 `{
     "orderId":   "A123",
     "customerId":"C001",
