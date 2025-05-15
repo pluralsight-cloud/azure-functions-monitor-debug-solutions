@@ -27,9 +27,18 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 5. Deploy the template.
 6. Follow along with the demo.
 
-7. Copy this JSON block to test the function.
-   
-`{
+7. Use the following command in the Azure Cloud Shell to deploy the function code.
+
+```
+RG=$(az group list --query "[0].name" -o tsv); \
+APP=$(az functionapp list --resource-group $RG --query "[0].name" -o tsv); \
+URL="https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/1.3/customtelemetry.zip"; \
+az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
+```
+
+8. Copy this JSON block to test the function.
+```json
+{
     "orderId":   "A123",
     "customerId":"C001",
     "items": [
@@ -37,7 +46,7 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
        {"sku":"MOUSE-BLK", "qty":2, "price":25}
     ]
 }
-`
+```
 
 ---
 
@@ -53,11 +62,22 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 3, complete the following steps now.
-	- Head into the Function App and click on the **http function**.
-	- Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
+	
+ 	1. Use the following command in the Azure Cloud Shell to deploy the function code. Wait 5-10 minutes for the deployment to finish.
+
+	```
+	RG=$(az group list --query "[0].name" -o tsv); \
+	APP=$(az functionapp list --resource-group $RG --query "[0].name" -o tsv); \
+	URL="https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/1.3/customtelemetry.zip"; \
+	az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
+	```
+ 
+	2. Head into the Function App and click on the **http function**.
+	3. Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
 
 
-	`{
+	```json
+	{
 	    "orderId":   "A123",
 	    "customerId":"C001",
 	    "items": [
@@ -65,9 +85,8 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 	       {"sku":"MOUSE-BLK", "qty":2, "price":25}
 	    ]
 	}
-	` 
- 
-9. Follow along with the demo.
+	``` 
+ 10. Follow along with the demo.
 
 ---
 
@@ -83,11 +102,22 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 4, complete the following steps now.
-	- Head into the Function App and click on the **http function**.
-	- Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
+   
+ 	1. Use the following command in the Azure Cloud Shell to deploy the function code. Wait 5-10 minutes for the deployment to finish.
+
+	```
+	RG=$(az group list --query "[0].name" -o tsv); \
+	APP=$(az functionapp list --resource-group $RG --query "[0].name" -o tsv); \
+	URL="https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/1.3/customtelemetry.zip"; \
+	az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
+	```
+ 
+	2. Head into the Function App and click on the **http function**.
+	3. Click on **Test/Run** and paste in the following JSON block into the **body**, then click on **Run**.
 
 
-	`{
+	```json
+	{
 	    "orderId":   "A123",
 	    "customerId":"C001",
 	    "items": [
@@ -95,27 +125,29 @@ Created by [Clint Bonnett](https://app.pluralsight.com/profile/author/clint-bonn
 	       {"sku":"MOUSE-BLK", "qty":2, "price":25}
 	    ]
 	}
-	` 
+	``` 
  
-7. Follow along with the demo.
+9. Follow along with the demo.
+10. Copy this JSON block to test the 400 errors alert.
 
-8. Copy this JSON block to test the 400 errors alert.
-
-`{
+```json
+{
     "orderId":   "A123",
     "customerId":"C001",
     "items": [
     ]
 }
-`
+```
 
 9. Copy this JSON block to test the order price alert.
 
-`{
+```json
+{
     "orderId":   "A123",
     "customerId":"C001",
     "items": [
        {"sku":"LAPTOP-MAC", "qty":1, "price":1800},
        {"sku":"MOUSE-FANCY", "qty":2, "price":250}
     ]
-}`
+}
+```
