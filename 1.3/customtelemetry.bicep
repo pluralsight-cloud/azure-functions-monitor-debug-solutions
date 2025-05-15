@@ -14,9 +14,6 @@ var appServicePlanName = 'asp${uniqueString(resourceGroup().id)}'
 var functionAppName = 'func${uniqueString(resourceGroup().id)}'
 var applicationInsightsName = 'app${uniqueString(resourceGroup().id)}'
 
-// URI of your zip package. Leave empty to skip deployment.
-var packageUri = 'https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/1.3/customtelemetry.zip'  
-
 // Create a storage account
 resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: storageAccountName
@@ -83,8 +80,8 @@ resource functionApp 'Microsoft.Web/sites@2022-03-01' = {
           value: reference(resourceId('Microsoft.Insights/components', applicationInsightsName), '2020-02-02').InstrumentationKey
         }
         {
-          name: 'WEBSITE_RUN_FROM_PACKAGE'
-          value: packageUri
+          name: 'SCM_DO_BUILD_DURING_DEPLOYMENT'
+          value: 'true'
         }
       ]
       cors: {
