@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.35.1.17967",
-      "templateHash": "978077035630276481"
+      "templateHash": "9870364853170319024"
     }
   },
   "variables": {
@@ -64,7 +64,7 @@
           "appSettings": [
             {
               "name": "FUNCTIONS_WORKER_RUNTIME",
-              "value": "dotnet"
+              "value": "dotnet-isolated"
             },
             {
               "name": "FUNCTIONS_EXTENSION_VERSION",
