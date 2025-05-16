@@ -63,7 +63,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 3, complete the following steps now.
 	
- 	1. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish.
+ 	1. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish. If you receive any errors, wait 5 minutes and run the command again.
 
 	```
 	RG=$(az group list --query "[0].name" -o tsv); \
@@ -103,7 +103,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 5. Deploy the template.
 6. If you’re starting fresh and haven’t followed along with Clip 4, complete the following steps now.
    
- 	1. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish.
+ 	1. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish. If you receive any errors, wait 5 minutes and run the command again.
 
 	```
 	RG=$(az group list --query "[0].name" -o tsv); \
