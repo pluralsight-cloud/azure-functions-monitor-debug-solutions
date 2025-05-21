@@ -253,7 +253,6 @@ QUEUE_APP=$(az functionapp list -g "$RG" -o tsv --query "[?starts_with(name,'que
 HTTP_URL="https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/2.6/httpfunction.zip"; \
 QUEUE_URL="https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/2.6/queuefunction.zip"; \
 az functionapp deploy -g "$RG" -n "$HTTP_APP" --src-url "$HTTP_URL" --type zip; az functionapp deploy -g "$RG" -n "$QUEUE_APP" --src-url "$QUEUE_URL" --type zip
-
 ```
 
 7. Follow along with the demo.
