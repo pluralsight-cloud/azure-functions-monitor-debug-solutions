@@ -222,7 +222,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 8. Copy this JSON block to send an order to the function.
 
 ```json
-{"orderId": "2421147", "item": "Laptop"}
+{"orderId":"A123", "quantity":2}
 ```
 ---
 
