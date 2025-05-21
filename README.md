@@ -177,7 +177,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 	
 4. Follow along with the demo.
 
-
+---
 
 ### Clip 2 - Demo: Debugging Azure Functions with VSCode 
 
@@ -195,7 +195,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 	
 4. Follow along with the demo.
 
-
+---
 
 ### Clip 3 - Demo: Live Debugging Azure Functions in the Azure Portal
 
@@ -224,12 +224,13 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 ```json
 {"orderId": "2421147", "item": "Laptop"}
 ```
-
+---
 
 ### Clip 4 - Demo: Snapshot Debugging Azure Functions
 
 1. If you'd like to open the snapshot with Visual Studio Enterprise, you can download it here: [debugsnapshot.diagsession (146 MB)](https://github.com/pluralsight-cloud/azure-functions-monitor-debug-solutions/raw/refs/heads/main/2.4/debugsnapshot.diagsession)
 
+---
 
 ### Clip 6 - Demo: Log Correlation with Azure Functions
 
