@@ -206,7 +206,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 3. Open this repository in the same window.
 4. Click the **Deploy to Azure** button. Make sure the link opens in the Sandbox browser tab.
 
-   [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fpluralsight-cloud%2Fazure-functions-monitor-debug-solutions%2Fraw%2Frefs%2Fheads%2Fmain%2F2.3%2Flivedebug.json)
+   [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpluralsight-cloud%2Fazure-functions-monitor-debug-solutions%2Frefs%2Fheads%2Fmain%2F2.3%2Flivedebug.json)
 
 5. Deploy the template and wait 5 minutes for the function app to provision.
 6. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish. If you receive any errors, wait 5 minutes and run the command again.
@@ -241,7 +241,7 @@ az functionapp deploy --resource-group $RG --name $APP --src-url $URL --type zip
 3. Open this repository in the same window.
 4. Click the **Deploy to Azure** button. Make sure the link opens in the Sandbox browser tab.
 
-   [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fgithub.com%2Fpluralsight-cloud%2Fazure-functions-monitor-debug-solutions%2Fraw%2Frefs%2Fheads%2Fmain%2F2.6%2Flogcorrelation.json)
+   [![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpluralsight-cloud%2Fazure-functions-monitor-debug-solutions%2Frefs%2Fheads%2Fmain%2F2.6%2Flogcorrelation.json)
 
 5. Deploy the template and wait 10 minutes for the function apps to provision.
 6. Use the following command in a bash Azure Cloud Shell to deploy the function code. Wait 10 minutes for the deployment to finish. If you receive any errors, wait 5 minutes and run the command again.
